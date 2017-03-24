@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Android Demo</string>
+
+    <string name="toolbar_tasks">Tasks</string>
+    <string name="toolbar_add_task">Add Task</string>
+
+    <string name="label_missing_name">Missing Name</string>
+    <string name="label_missing_description">Missing Description</string>
+    <string name="label_missing_assignee">Missing Assignee</string>
+    <string name="label_missing_date">Missing Date</string>
+    <string name="label_add_task">Add Task</string>
+
+    <string name="hint_task_name">Enter Task Name</string>
+    <string name="hint_task_description">Enter Task Description</string>
+    <string name="hint_task_assignee">Enter Task Assignee</string>
+    <string name="hint_task_date">Select Task Date</string>
+
+    <string name="loading_add_task">Adding Your Task</string>
+
+    <string name="error_add_task">There was an error adding your task</string>
+    <string name="error_no_internet">Missing Internet Connection</string>
+</resources>
