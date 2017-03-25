@@ -3,7 +3,6 @@ package com.endava.androiddemo.screens.tasks.core;
 import com.endava.androiddemo.R;
 import com.endava.androiddemo.utils.UiUtils;
 import com.endava.androiddemo.utils.rx.RxSchedulers;
-import rx.Observable;
 import rx.Subscription;
 import rx.subscriptions.CompositeSubscription;
 
@@ -42,7 +41,7 @@ public class TasksPresenter {
   }
 
   private Subscription loadTasksSubscription() {
-    return Observable.just(model.getTasks())
+    return model.getTasks()
       .subscribeOn(rxSchedulers.background())
       .observeOn(rxSchedulers.androidUI())
       .retry()

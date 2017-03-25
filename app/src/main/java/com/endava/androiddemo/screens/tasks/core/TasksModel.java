@@ -25,8 +25,8 @@ public class TasksModel {
     return activity.getString(stringResourceId);
   }
 
-  List<Task> getTasks() {
-    return taskRepository.getAll();
+  Observable<List<Task>> getTasks() {
+    return Observable.just(taskRepository.getAll());
   }
 
   Observable<List<Task>> loadNetworkTasks() {
